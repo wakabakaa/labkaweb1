@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готельно-Ресторанна Система</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Готельно-ресторанний комплекс "Едельвейс"</h1>
+    </header>
+
+    <main class="content-container">
+
+        <section class="section menu-section">
+            <h2>Меню Ресторану</h2>
+            <button onclick="loadItems()" class="load-button primary-button">Меню</button>
+            <div id="items-list" class="data-list-container">
+                <p>Натисніть кнопку вище, щоб отримати дані...</p>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="section reservations-section">
+            <h2>Бронювання Готелю</h2>
+            <button onclick="loadReservations()" class="load-button secondary-button">Бронювання</button>
+            <div id="reservations-list" class="data-list-container">
+                <p>Натисніть кнопку вище, щоб отримати дані...</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
