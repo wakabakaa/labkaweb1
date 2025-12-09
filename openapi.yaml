@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: SmartStay Ordering API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api
+paths:
+  /orders:
+    post:
+      summary: Створити замовлення
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                roomNumber:
+                  type: string
+                  example: "101"
+                items:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      itemId:
+                        type: integer
+                        example: 1
+                      quantity:
+                        type: integer
+                        example: 2
+      responses:
+        '201':
+          description: Created
+    get:
+      summary: Отримати всі замовлення
+      responses:
+        '200':
+          description: List of orders
