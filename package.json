@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "node src/server.js",
     "test": "jest"
   },
   "dependencies": {
@@ -7,9 +8,10 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "sqlite3": "^5.1.7",
-    "uuid": "^13.0.0"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "jest": "^30.2.0"
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
   }
 }
